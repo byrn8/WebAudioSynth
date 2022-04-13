@@ -1,0 +1,472 @@
+/*-------GENERAL---------*/
+
+body {
+	background-image: url('bg/treew.png');
+	background-attachment: fixed;
+}
+
+#link {
+  position:absolute;
+	top:calc(50% - -305px);
+	left:calc(50% - 235px);
+	font-family: "Lucida Console", "Courier New", monospace;
+	font-size: 44px;
+}
+
+#enval1 {
+  position:absolute;
+	height:1%;
+  top:calc(50% - 21px);
+	left:calc(50% - 139px);
+}
+
+#enval2 {
+  position:absolute;
+	height:1%;
+  top:calc(50% - 21px);
+	left:calc(50% - 72px);
+}
+
+#enval3 {
+  position:absolute;
+	height:1%;
+  top:calc(50% - 21px);
+	left:calc(50% - 65px);
+}
+
+/*-------KEYBOARD-------*/
+
+.whitenote {
+  height:100%;
+  width:50px;
+  float:left;
+  position:relative;
+  background:white;
+  overflow:visible;
+  border-right:1px solid black;
+}
+
+.blacknote {
+  position:absolute;
+  height:65%;
+  width:55%;
+  left:68%;
+  z-index:1;
+  background:#000;
+  left:71%;
+}
+
+#container {
+  position:absolute;
+  top:50px;
+  left:calc(50% - 400px);
+  border:5px solid black;
+  top:calc(50% - 20px);
+  left:calc(50% - 550px);
+  height:200px;
+}
+
+/*-------AMPLITUDE-ENVELOPE-------*/
+
+#ampenv {
+  position:absolute;
+  background-color: #e3f4ff;
+  padding: 10px;
+  width:280px;
+  height:180px;
+  top:calc(50% - 231px);
+  left:calc(50% - 550px);
+  border:5px solid black;
+	font-family: "Lucida Console", "Courier New", monospace;
+	font-size: 14px;
+}
+
+#ampenv-content {
+  position:absolute;
+  top:calc(2%);
+  left:calc(5%);
+}
+
+#ampenvattackcurvecontainer {
+  position:absolute;
+	left:calc(100% - 275px);
+  top:calc(50% - 50px);
+  width: 1%;
+}
+
+#ampenvdecaycurvecontainer {
+  position:absolute;
+	left:calc(100% - 131px);
+  top:calc(50% - 50px);
+  width: 1%;
+}
+
+#ampenvreleasecurvecontainer {
+  position:absolute;
+	left:calc(100% - 131px);
+  top:calc(80% - 35px);
+  width: 1%;
+}
+
+#ampenvattackslidercontainer {
+  position:absolute;
+  left:calc(100% - 289px);
+  top:calc(50% - 40px);
+  width: 10%;
+}
+
+#ampenvdecayslidercontainer {
+  position:absolute;
+	left:calc(100% - 145px);
+  top:calc(50% - 40px);
+  width: 10%;
+}
+
+#ampenvsustainslidercontainer {
+  position:absolute;
+	left:calc(100% - 289px);
+  top:calc(80% - 25px);
+  width: 10%;
+}
+
+#ampenvreleaseslidercontainer {
+  position:absolute;
+	left:calc(100% - 145px);
+  top:calc(80% - 25px);
+  width: 10%;
+}
+
+#ampenvattackval {
+  position:absolute;
+	height:0%;
+  top:calc(50% - 17px);
+	left:calc(50% - 133px);
+}
+
+#ampenvdecayval {
+  position:absolute;
+	height:0%;
+  top:calc(50% - 17px);
+	left:calc(60% - 19px);
+}
+
+#ampenvsustainval {
+  position:absolute;
+	height:0%;
+  top:calc(80% - 2px);
+	left:calc(50% - 133px);
+}
+
+#ampenvreleaseval {
+  position:absolute;
+	height:0%;
+  top:calc(80% - 2px);
+	left:calc(60% - 19px);
+}
+
+/*-------FREQUENCY-ENVELOPE-------*/
+
+#freqenv {
+  position:absolute;
+  background-color: #e3f4ff;
+  padding: 10px;
+	width:280px;
+  height:180px;
+  top:calc(50% - 231px);
+  left:calc(50% - 239px);
+  border:5px solid black;
+	font-family: "Lucida Console", "Courier New", monospace;
+	font-size: 14px;
+}
+
+#freqenv-content {
+  position:absolute;
+  top:calc(2%);
+  left:calc(5%);
+}
+
+#freqenvattackcurvecontainer {
+  position:absolute;
+	left:calc(100% - 275px);
+  top:calc(50% - 50px);
+  width: 1%;
+}
+
+#freqenvdecaycurvecontainer {
+  position:absolute;
+	left:calc(100% - 131px);
+  top:calc(50% - 50px);
+  width: 1%;
+}
+
+#freqenvreleasecurvecontainer {
+  position:absolute;
+	left:calc(100% - 131px);
+  top:calc(80% - 35px);
+  width: 1%;
+}
+
+#freqenvattackslidercontainer {
+  position:absolute;
+	left:calc(100% - 289px);
+  top:calc(50% - 40px);
+  width: 10%;
+}
+
+#freqenvdecayslidercontainer {
+  position:absolute;
+	left:calc(100% - 145px);
+  top:calc(50% - 40px);
+  width: 10%;
+}
+
+#freqenvsustainslidercontainer {
+  position:absolute;
+	left:calc(100% - 289px);
+  top:calc(80% - 25px);
+  width: 10%;
+}
+
+#freqenvreleaseslidercontainer {
+  position:absolute;
+	left:calc(100% - 145px);
+  top:calc(80% - 25px);
+  width: 10%;
+}
+
+#freqenvattackval {
+  position:absolute;
+	height:0%;
+	top:calc(50% - 17px);
+	left:calc(50% - 133px);
+}
+
+#freqenvdecayval {
+  position:absolute;
+	height:0%;
+	top:calc(50% - 17px);
+	left:calc(60% - 19px);
+}
+
+#freqenvsustainval {
+  position:absolute;
+	height:0%;
+	top:calc(80% - 2px);
+	left:calc(50% - 133px);
+}
+
+#freqenvreleaseval {
+  position:absolute;
+	height:0%;
+	top:calc(80% - 2px);
+	left:calc(60% - 19px);
+}
+
+/*-------OSCILLATOR-------*/
+
+#oscillator {
+  position:absolute;
+  background-color: #e3f4ff;
+  padding: 10px;
+  width:225px;
+  height:74px;
+  top:calc(50% - 231px);
+  left:calc(50% - -72px);
+  border:5px solid black;
+	font-family: "Lucida Console", "Courier New", monospace;
+	font-size: 14px;
+}
+
+#oscillator-content {
+  position:absolute;
+  top:calc(5%);
+  left:calc(5%);
+}
+
+#oscillatortypecontainer {
+  position:absolute;
+  left:calc(70% - 22px);
+  top:calc(50% - -4px);
+  width: 1%;
+}
+
+/*-------VOLUME-------*/
+
+#volume {
+  position:absolute;
+  background-color: #e3f4ff;
+  padding: 10px;
+  width:173px;
+  height:74px;
+  top:calc(50% - 231px);
+  left:calc(50% - -328px);
+  border:5px solid black;
+	font-family: "Lucida Console", "Courier New", monospace;
+	font-size: 14px;
+}
+
+#volume-content {
+  position:absolute;
+  top:calc(5%);
+  left:calc(7%);
+}
+
+#volumecontainer {
+  position:absolute;
+  left:calc(70% - 122px);
+  top:calc(50% - 20px);
+  width: 1%;
+}
+
+#volumevalue {
+  position:absolute;
+	height:1%;
+	top:calc(50% - -7px);
+	left:calc(50% - 83px);
+}
+
+/*-------FILTER-------*/
+
+#filter {
+  position:absolute;
+  background-color: #e3f4ff;
+  padding: 10px;
+  width:429px;
+  height:75px;
+  top:calc(50% - 126px);
+  left:calc(50% - -72px);
+  border:5px solid black;
+	font-family: "Lucida Console", "Courier New", monospace;
+	font-size: 14px;
+}
+
+#filter-content {
+  position:absolute;
+  top:calc(5%);
+  left:calc(3%);
+}
+
+#filtertypecontainer {
+  position:absolute;
+	left:calc(100% - 105px);
+  top:calc(50% - 4px);
+  width: 1%;
+}
+
+#filterqslidercontainer {
+  position:absolute;
+	left:calc(100% - 438px);
+  top:calc(50% - 18px);
+  width: 10%;
+}
+
+#filterrolloffcontainer {
+  position:absolute;
+	left:calc(100% - 228px);
+  top:calc(50% - 4px);
+  width: 1%;
+}
+
+#filterqval {
+  position:absolute;
+	height:1%;
+	top:calc(50% - -7px);
+	left:calc(50% - 209px);
+}
+
+/*-------USER-INTERFACE-------*/
+
+select {
+	font-family: "Lucida Console", "Courier New", monospace;
+}
+
+input[type=range] {
+  height: 26px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 130px;
+	background: #e3f4ff;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 9px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #D5D5D5;
+  background: #D5D5D5;
+  border-radius: 50px;
+  border: 1px solid #383838;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #03a1fc;
+  border: 0px solid #03a1fc;
+  height: 20px;
+  width: 10px;
+  border-radius: 50px;
+  background: #03a1fc;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -6px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #D5D5D5;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 9px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #D5D5D5;
+  background: #D5D5D5;
+  border-radius: 50px;
+  border: 1px solid #383838;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #03a1fc;
+  border: 0px solid #03a1fc;
+  height: 20px;
+  width: 10px;
+  border-radius: 50px;
+  background: #03a1fc;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 9px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #D5D5D5;
+  border: 1px solid #383838;
+  border-radius: 100px;
+  box-shadow: 0px 0px 0px #D5D5D5;
+}
+input[type=range]::-ms-fill-upper {
+  background: #D5D5D5;
+  border: 1px solid #383838;
+  border-radius: 100px;
+  box-shadow: 0px 0px 0px #D5D5D5;
+}
+input[type=range]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 0px 0px 0px #03a1fc;
+  border: 0px solid #03a1fc;
+  height: 20px;
+  width: 10px;
+  border-radius: 50px;
+  background: #03a1fc;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #D5D5D5;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #D5D5D5;
+}
