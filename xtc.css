@@ -36,7 +36,7 @@ body {
 
 /*-------KEYBOARD-------*/
 
-.whitenote {
+.notew {
   height:100%;
   width:50px;
   float:left;
@@ -46,7 +46,7 @@ body {
   border-right:1px solid black;
 }
 
-.blacknote {
+.noteb {
   position:absolute;
   height:65%;
   width:55%;

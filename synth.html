@@ -154,7 +154,7 @@
       <p>Volume Control</p>
     </div>
     <div id=volumecontainer>
-      <input id=volumerange type="range" min="-10" max="10" value="0" step="1">
+      <input id=volumerange type="range" min="-20" max="0" value="0" step="1">
     </div>
     <div id=volumevalue>
       <p>Volume: <span id="vol"></span></p>
@@ -166,7 +166,7 @@
       <p>Filter</p>
     </div>
     <div id=filterqslidercontainer>
-      <input id=filterqrange type="range" min="1" max="100" value="1" step="1">
+      <input id=filterqrange type="range" min="1" max="10" value="1" step="1">
     </div>
     <div id=filterqval>
       <p>Q: <span id="q"></span></p>
@@ -222,10 +222,10 @@
           if (note == 'E' || note == 'B')
             hasSharp = false;
 
-          html += `<div class='whitenote' onmousedown='noteDown(this, false)' onmouseup='noteUp(this,false)' onmouseleave='noteUp(this,false)' data-note='${note + (octave+4)}'>`;
+          html += `<div class='notew' onmousedown='noteDown(this, false)' onmouseup='noteUp(this,false)' onmouseleave='noteUp(this,false)' data-note='${note + (octave+4)}'>`;
 
           if (hasSharp) {
-            html += `<div class='blacknote' onmousedown='noteDown(this, true)' onmouseup='noteUp(this, true)' onmouseleave='noteUp(this,true)' data-note='${note + '#' + (octave+4)}'></div>`;
+            html += `<div class='noteb' onmousedown='noteDown(this, true)' onmouseup='noteUp(this, true)' onmouseleave='noteUp(this,true)' data-note='${note + '#' + (octave+4)}'></div>`;
           }
 
           html += `</div>`;
